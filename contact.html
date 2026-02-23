@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Street Food of India</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-dot">◆</span>
+      Street<span>Food</span> India
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Share a Dish →</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════ CONTACT HERO ══════════ -->
+  <section class="contact-hero">
+    <div>
+      <span class="section-label" style="display:block; margin-bottom: 16px; position: relative;">Know a hidden gem?</span>
+      <h1>Tell Us Your<br><em>Favourite Dish</em></h1>
+      <p>Every great street food was once unknown. Help us uncover the ones that deserve to be on this map.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT MAIN ══════════ -->
+  <section class="section section-cream">
+    <div class="inner">
+      <div class="contact-layout">
+
+        <!-- LEFT: Info -->
+        <div class="contact-info">
+          <span class="section-label">Reach Out</span>
+          <h2>We'd Love to <em style="font-style: italic; color: var(--ember);">Hear From You</em></h2>
+          <div class="divider-line" style="margin-bottom: 24px;"></div>
+          <p>
+            India is too vast and too flavourful for five students to cover alone. If you know a street food
+            dish from your city, your state, or your family's tradition that we've missed — please share it with us.
+            We read every message and will do our best to add genuinely great submissions to the guide.
+          </p>
+
+          <div class="info-items">
+            <div class="info-item">
+              <div class="info-icon">🍛</div>
+              <div>
+                <h4>Share a Dish</h4>
+                <p>Tell us about a local street food we've missed from your state or city</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">✏️</div>
+              <div>
+                <h4>Suggest a Correction</h4>
+                <p>Spotted something inaccurate about a dish, its origin, or description? Let us know</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">🤝</div>
+              <div>
+                <h4>General Feedback</h4>
+                <p>Thoughts on the project, design, or content — we're open to everything</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">🎓</div>
+              <div>
+                <h4>Academic Inquiries</h4>
+                <p>This is a Git workflow student project — happy to discuss it with fellow students or educators</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div class="contact-form">
+          <h3>Drop Us a Message 🌶️</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="e.g. Priya Sharma" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="e.g. priya@email.com" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="city">Your City</label>
+              <input type="text" id="city" placeholder="e.g. Shillong, Bhubaneswar..." />
+            </div>
+            <div class="form-group">
+              <label for="state">Your State</label>
+              <select id="state">
+                <option value="">Select State / UT</option>
+                <optgroup label="North India">
+                  <option>Delhi</option>
+                  <option>Uttar Pradesh</option>
+                  <option>Punjab</option>
+                  <option>Haryana</option>
+                  <option>Himachal Pradesh</option>
+                  <option>Uttarakhand</option>
+                  <option>Jammu & Kashmir</option>
+                  <option>Ladakh</option>
+                </optgroup>
+                <optgroup label="West India">
+                  <option>Maharashtra</option>
+                  <option>Gujarat</option>
+                  <option>Rajasthan</option>
+                  <option>Goa</option>
+                </optgroup>
+                <optgroup label="South India">
+                  <option>Tamil Nadu</option>
+                  <option>Kerala</option>
+                  <option>Karnataka</option>
+                  <option>Andhra Pradesh</option>
+                  <option>Telangana</option>
+                  <option>Puducherry</option>
+                  <option>Lakshadweep</option>
+                  <option>Andaman & Nicobar</option>
+                </optgroup>
+                <optgroup label="East India">
+                  <option>West Bengal</option>
+                  <option>Odisha</option>
+                  <option>Bihar</option>
+                  <option>Jharkhand</option>
+                </optgroup>
+                <optgroup label="Northeast India">
+                  <option>Assam</option>
+                  <option>Meghalaya</option>
+                  <option>Manipur</option>
+                  <option>Nagaland</option>
+                  <option>Mizoram</option>
+                  <option>Tripura</option>
+                  <option>Arunachal Pradesh</option>
+                  <option>Sikkim</option>
+                </optgroup>
+                <optgroup label="Central India">
+                  <option>Madhya Pradesh</option>
+                  <option>Chhattisgarh</option>
+                </optgroup>
+                <optgroup label="Other UTs">
+                  <option>Chandigarh</option>
+                  <option>Dadra & Nagar Haveli</option>
+                  <option>Daman & Diu</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="dish">Dish Name (if suggesting a food)</label>
+            <input type="text" id="dish" placeholder="e.g. Bamboo Shoot Pickle, Akki Roti, Kosha Mangsho..." />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Tell us about the dish, where to find it, what makes it special, or any general feedback..."></textarea>
+          </div>
+
+          <button class="submit-btn" onclick="handleSubmit()">Send Message 🚀</button>
+
+          <p style="text-align:center; margin-top: 14px; font-size: 0.8rem; color: #aaa;">
+            This is a student project. We'll do our best to respond!
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SUGGEST A DISH ══════════ -->
+  <section class="section section-dark">
+    <div class="inner">
+      <div class="section-head center">
+        <span class="section-label">Community Wishlist</span>
+        <h2 class="section-title">Dishes We're <em>Still Hunting For</em></h2>
+        <p class="section-desc">These are the states and regions we know we haven't done full justice to. If you're from any of these places, we'd love your help.</p>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="suggest-grid">
+        <div class="suggest-card">
+          <span class="suggest-emoji">🏔️</span>
+          <div class="suggest-name">Arunachal Pradesh</div>
+          <div class="suggest-state">Thukpa · Apong</div>
+        </div>
+        <div class="suggest-card">
+          <span class="suggest-emoji">🌿</span>
+          <div class="suggest-name">Mizoram</div>
+          <div class="suggest-state">Vawksa · Sawhchiar</div>
+        </div>
+        <div class="suggest-card">
+          <span class="suggest-emoji">🦀</span>
+          <div class="suggest-name">Andaman Islands</div>
+          <div class="suggest-state">Seafood · Coconut Dishes</div>
+        </div>
+        <div class="suggest-card">
+          <span class="suggest-emoji">🐄</span>
+          <div class="suggest-name">Haryana</div>
+          <div class="suggest-state">Bajra Khichdi · Kachri</div>
+        </div>
+        <div class="suggest-card">
+          <span class="suggest-emoji">🌾</span>
+          <div class="suggest-name">Chhattisgarh</div>
+          <div class="suggest-state">Faraa · Bafauri</div>
+        </div>
+        <div class="suggest-card">
+          <span class="suggest-emoji">🫙</span>
+          <div class="suggest-name">Dadra & NH</div>
+          <div class="suggest-state">Ubadiyu · Undhiyu</div>
+        </div>
+        <div class="suggest-card">
+          <span class="suggest-emoji">🐟</span>
+          <div class="suggest-name">Lakshadweep</div>
+          <div class="suggest-state">Tuna Dishes · Coconut</div>
+        </div>
+        <div class="suggest-card">
+          <span class="suggest-emoji">🍵</span>
+          <div class="suggest-name">Your State!</div>
+          <div class="suggest-state">Tell us what we missed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">Street<span>Food</span> India</div>
+      <p class="footer-text">Made with ❤️ &amp; 🌶️ by <strong>Team Street Food India</strong> &nbsp;·&nbsp; Git Workflow Assignment</p>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please fill in your name, email, and message before sending!');
+        return;
+      }
+
+      const btn = document.querySelector('.submit-btn');
+      btn.textContent = '✅ Message Sent! Thank you!';
+      btn.style.background = 'linear-gradient(135deg, #2d7a5f, #1a5c45)';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        btn.textContent = 'Send Message 🚀';
+        btn.style.background = '';
+        btn.disabled = false;
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('city').value = '';
+        document.getElementById('dish').value = '';
+        document.getElementById('message').value = '';
+        document.getElementById('state').value = '';
+      }, 4000);
+    }
+  </script>
+
+</body>
+</html>
