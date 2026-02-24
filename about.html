@@ -4,233 +4,285 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About — Street Food of India</title>
+
+  <meta name="description" content="Street Food of India — a collaborative static website celebrating India's street food culture, regional diversity, and popular dishes. Built using Git Flow and GitHub Pages." />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- ══════════ NAVBAR ══════════ -->
-  <nav class="navbar">
-    <div class="logo">
-      <span class="logo-dot">◆</span>
-      Street<span>Food</span> India
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="nav-cta">Share a Dish →</a></li>
-    </ul>
-  </nav>
+  <!-- Skip link (Accessibility) -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- ══════════ ABOUT HERO ══════════ -->
-  <section class="about-hero">
-    <div>
-      <span class="section-label" style="display:block; margin-bottom: 16px;">Our Story</span>
-      <h1>Food is <em>Culture.</em><br>Culture is <em>India.</em></h1>
-      <p>We are five students on a mission to document, celebrate, and preserve the extraordinary street food heritage of the world's most diverse nation.</p>
-    </div>
-  </section>
+  <!-- ══════════ HEADER ══════════ -->
+  <header>
+    <!-- ══════════ NAVBAR ══════════ -->
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="logo">
+        <span class="logo-dot">◆</span>
+        Street<span>Food</span> India
+      </div>
 
-  <!-- ══════════ ABOUT STORY ══════════ -->
-  <section class="section section-cream">
-    <div class="inner">
-      <div class="about-story">
-        <div class="about-story-text">
-          <span class="section-label">Why We Built This</span>
-          <h2 class="section-title">More Than a <em>Website</em></h2>
-          <div class="divider-line" style="margin-bottom: 28px;"></div>
-          <p>
-            Indian street food is not just sustenance — it is the autobiography of a civilisation. Every city has its own
-            flavour identity. Every vendor carries generations of culinary knowledge passed down through families.
-            A samosa in Lucknow tastes nothing like one in Bangalore. Pani puri water in Mumbai is not the same as
-            Delhi's golgappa. These distinctions matter deeply.
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Active page -->
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+
+        <li><a href="contact.html" class="nav-cta">Share a Dish →</a></li>
+      </ul>
+    </nav>
+
+    <!-- ══════════ ABOUT HERO ══════════ -->
+    <section class="about-hero">
+      <div>
+        <span class="section-label block mb-16">Our Story</span>
+        <h1>Food is <em>Culture.</em><br>Culture is <em>India.</em></h1>
+
+        <p>
+          We are a collaborative student team exploring how Git workflows power real-world development —
+          through the lens of India’s extraordinary street food culture.
+        </p>
+      </div>
+    </section>
+  </header>
+
+  <!-- ══════════ MAIN ══════════ -->
+  <main id="main-content">
+
+    <!-- ══════════ ABOUT STORY ══════════ -->
+    <section class="section section-cream">
+      <div class="inner">
+        <div class="about-story">
+          <div class="about-story-text">
+            <span class="section-label">Why We Built This</span>
+            <h2 class="section-title">More Than a <em>Website</em></h2>
+            <div class="divider-line mb-28"></div>
+
+            <p>
+              Indian street food is not just sustenance — it is the autobiography of a civilisation. Every city has its own
+              flavour identity. Every vendor carries generations of culinary knowledge passed down through families.
+              A samosa in Lucknow tastes nothing like one in Bangalore. Pani puri water in Mumbai is not the same as
+              Delhi's golgappa. These distinctions matter deeply.
+            </p>
+
+            <p>
+              This project began as a Git workflow assignment — but it became something more meaningful.
+              We wanted to create a resource that genuinely celebrates the diversity and depth of India's street food culture,
+              reaching into states and regions that mainstream food media consistently overlooks: the smoked pork
+              of Nagaland, the bamboo-cooked dishes of Manipur, the coconut-sweet bread of Mangalore.
+            </p>
+
+            <p>
+              Every dish on this site was researched, written, and designed by a team member working independently
+              on their own Git branch — a small but real reflection of how collaborative software development works
+              in real world.
+            </p>
+          </div>
+
+          <div class="about-visual">
+            <span class="big-emoji">🗺️</span>
+            <h3>Built Across India's Map</h3>
+            <p>From the chai stalls of Varanasi to the bamboo kitchens of Nagaland — we tried to document it all.</p>
+
+            <div class="about-highlights">
+              <span class="highlight-pill">28 States</span>
+              <span class="highlight-pill">8 UTs</span>
+              <span class="highlight-pill">50+ Dishes</span>
+              <span class="highlight-pill">5 Developers</span>
+              <span class="highlight-pill">1 Git Repo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ TEAM ══════════ -->
+    <section class="section section-parchment">
+      <div class="inner">
+        <div class="section-head center">
+          <span class="section-label">The Team</span>
+          <h2 class="section-title">Five Developers, <em>One Delicious Project</em></h2>
+
+          <p class="section-desc">
+            Each member owned a separate file, worked on their own Git branch, and submitted a pull request.
+            Real teamwork. Real Git flow.
           </p>
-          <p>
-            This project began as a university Git workflow assignment — but it became something more meaningful.
-            We wanted to create a resource that genuinely celebrates the diversity and depth of India's street food culture,
-            reaching into states and regions that mainstream food media consistently overlooks: the smoked pork
-            of Nagaland, the bamboo-cooked dishes of Manipur, the coconut-sweet bread of Mangalore.
-          </p>
-          <p>
-            Every dish on this site was researched, written, and designed by a team member working independently
-            on their own Git branch — a small but real reflection of how collaborative software development works
-            in the real world.
+
+          <div class="divider-line"></div>
+
+          <!-- DevOps/Git Flow note (extra marks) -->
+          <p class="workflow-note">
+            This project follows the Git Flow branching strategy: feature branches → pull requests → merge to develop → merge to main → deploy via GitHub Pages.
           </p>
         </div>
-        <div class="about-visual">
-          <span class="big-emoji">🗺️</span>
-          <h3>Built Across India's Map</h3>
-          <p>From the chai stalls of Varanasi to the bamboo kitchens of Nagaland — we tried to document it all.</p>
-          <div class="about-highlights">
-            <span class="highlight-pill">28 States</span>
-            <span class="highlight-pill">8 UTs</span>
-            <span class="highlight-pill">50+ Dishes</span>
-            <span class="highlight-pill">5 Developers</span>
-            <span class="highlight-pill">1 Git Repo</span>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="avatar">👩‍💻</div>
+            <div class="team-name">Santhoshi R</div>
+            <div class="team-role">Home Page Developer</div>
+            <div class="team-branch">feature/home-page</div>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar">👩‍💻</div>
+            <div class="team-name">Brindha B</div>
+            <div class="team-role">About Page Developer</div>
+            <div class="team-branch">feature/about-page</div>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar">👨‍💻</div>
+            <div class="team-name">Kartheeswaran</div>
+            <div class="team-role">Contact Page Developer</div>
+            <div class="team-branch">feature/contact-page</div>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar">🧑‍🎨</div>
+            <div class="team-name">Mohamed Azarudin</div>
+            <div class="team-role">Lead Stylesheet Designer</div>
+            <div class="team-branch">feature/stylesheet</div>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar">🧑‍💻</div>
+            <div class="team-name">Sridhar</div>
+            <div class="team-role">Documentation &amp; README</div>
+            <div class="team-branch">feature/readme</div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ TEAM ══════════ -->
-  <section class="section section-parchment">
-    <div class="inner">
-      <div class="section-head center">
-        <span class="section-label">The Team</span>
-        <h2 class="section-title">Five Developers, <em>One Delicious Project</em></h2>
-        <p class="section-desc">Each member owned a separate file, worked on their own Git branch, and submitted a pull request. Real teamwork. Real Git flow.</p>
-        <div class="divider-line"></div>
+    <!-- ══════════ QUOTE ══════════ -->
+    <section class="quote-section">
+      <blockquote class="quote-text">
+        India is not a country. It is a feeling — and nowhere is that feeling stronger than at a street food stall,
+        surrounded by strangers who are all eating the same thing, all smiling the same smile.
+      </blockquote>
+      <cite class="quote-author">— The Street Food of India Team</cite>
+    </section>
+
+    <!-- ══════════ REGIONAL DIVERSITY ══════════ -->
+    <section class="section section-cream">
+      <div class="inner">
+        <div class="section-head center">
+          <span class="section-label">A Nation of Flavours</span>
+          <h2 class="section-title">India's <em>Culinary Regions</em></h2>
+          <p class="section-desc">
+            Every region of India has a completely distinct culinary identity — shaped by geography, climate, religion, and history.
+          </p>
+          <div class="divider-line"></div>
+        </div>
+
+        <div class="diversity-grid">
+
+          <div class="diversity-card">
+            <div class="diversity-icon">🏔️</div>
+            <div>
+              <h3>North India</h3>
+              <p>Rich Mughal-influenced cuisine. Tandoor cooking, dairy-based gravies, wheat breads, and robust spice blends define this region's iconic street food culture.</p>
+              <div class="diversity-foods">
+                <span class="food-tag">Chole Bhature</span>
+                <span class="food-tag">Samosa</span>
+                <span class="food-tag">Golgappa</span>
+                <span class="food-tag">Kulcha</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="diversity-card">
+            <div class="diversity-icon">🌴</div>
+            <div>
+              <h3>South India</h3>
+              <p>Rice and lentil-based fermented foods, coconut-laced curries, and tamarind-forward flavours. The birthplace of dosa, idli, and some of the world's most beloved street foods.</p>
+              <div class="diversity-foods">
+                <span class="food-tag">Masala Dosa</span>
+                <span class="food-tag">Idli Sambar</span>
+                <span class="food-tag">Pesarattu</span>
+                <span class="food-tag">Kozhikode Halwa</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="diversity-card">
+            <div class="diversity-icon">🌊</div>
+            <div>
+              <h3>West India</h3>
+              <p>A brilliant marriage of tangy, sweet, and spicy. Mumbai's street food culture is world-famous, while Gujarat's vegetarian traditions and Goa's Portuguese-influenced coastal cuisine are extraordinary.</p>
+              <div class="diversity-foods">
+                <span class="food-tag">Vada Pav</span>
+                <span class="food-tag">Pav Bhaji</span>
+                <span class="food-tag">Dabeli</span>
+                <span class="food-tag">Fish Recheado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="diversity-card">
+            <div class="diversity-icon">🌅</div>
+            <div>
+              <h3>East India</h3>
+              <p>Subtle mustard-oil flavours, fermented foods, and fresh fish define East India. Kolkata is one of the great street food cities of the world, with its own entirely unique culinary vocabulary.</p>
+              <div class="diversity-foods">
+                <span class="food-tag">Kathi Roll</span>
+                <span class="food-tag">Jhal Muri</span>
+                <span class="food-tag">Litti Chokha</span>
+                <span class="food-tag">Dahibara</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="diversity-card">
+            <div class="diversity-icon">🌿</div>
+            <div>
+              <h3>Northeast India</h3>
+              <p>Bamboo, fermentation, smoked meats, and rare endemic chillies create one of the most unique and underexplored culinary traditions on the planet. Deeply tied to forest and tribal cultures.</p>
+              <div class="diversity-foods">
+                <span class="food-tag">Momos</span>
+                <span class="food-tag">Jadoh</span>
+                <span class="food-tag">Singju</span>
+                <span class="food-tag">Smoked Pork</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="diversity-card">
+            <div class="diversity-icon">🏛️</div>
+            <div>
+              <h3>Central India</h3>
+              <p>Hearty, earthy, and rustic cuisine shaped by the Deccan plateau and tribal culinary traditions. Madhya Pradesh's street food, especially Indore's legendary food scene, is a national treasure.</p>
+              <div class="diversity-foods">
+                <span class="food-tag">Poha Jalebi</span>
+                <span class="food-tag">Dal Baati</span>
+                <span class="food-tag">Chila</span>
+                <span class="food-tag">Bhutte ka Kees</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+    </section>
 
-      <div class="team-grid">
-        <div class="team-card">
-          <div class="avatar">👨‍💻</div>
-          <div class="team-name">Member 1</div>
-          <div class="team-role">Home Page Developer</div>
-          <div class="team-branch">feature/home-page</div>
-        </div>
-        <div class="team-card">
-          <div class="avatar">👩‍💻</div>
-          <div class="team-name">Member 2</div>
-          <div class="team-role">About Page Developer</div>
-          <div class="team-branch">feature/about-page</div>
-        </div>
-        <div class="team-card">
-          <div class="avatar">👨‍💻</div>
-          <div class="team-name">Member 3</div>
-          <div class="team-role">Contact Page Developer</div>
-          <div class="team-branch">feature/contact-page</div>
-        </div>
-        <div class="team-card">
-          <div class="avatar">👩‍💻</div>
-          <div class="team-name">Member 4</div>
-          <div class="team-role">Lead Stylesheet Designer</div>
-          <div class="team-branch">feature/stylesheet</div>
-        </div>
-        <div class="team-card">
-          <div class="avatar">🧑‍💻</div>
-          <div class="team-name">Member 5</div>
-          <div class="team-role">Documentation & README</div>
-          <div class="team-branch">feature/readme</div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Back to top -->
+    <a href="#" class="back-to-top" aria-label="Back to top">↑</a>
 
-  <!-- ══════════ QUOTE ══════════ -->
-  <section class="quote-section">
-    <p class="quote-text">"India is not a country. It is a feeling — and nowhere is that feeling stronger than at a street food stall, surrounded by strangers who are all eating the same thing, all smiling the same smile."</p>
-    <div class="quote-author">— The Street Food of India Team</div>
-  </section>
-
-  <!-- ══════════ REGIONAL DIVERSITY ══════════ -->
-  <section class="section section-cream">
-    <div class="inner">
-      <div class="section-head center">
-        <span class="section-label">A Nation of Flavours</span>
-        <h2 class="section-title">India's <em>Culinary Regions</em></h2>
-        <p class="section-desc">Every region of India has a completely distinct culinary identity — shaped by geography, climate, religion, and history.</p>
-        <div class="divider-line"></div>
-      </div>
-
-      <div class="diversity-grid">
-
-        <div class="diversity-card">
-          <div class="diversity-icon">🏔️</div>
-          <div>
-            <h3>North India</h3>
-            <p>Rich Mughal-influenced cuisine. Tandoor cooking, dairy-based gravies, wheat breads, and robust spice blends define this region's iconic street food culture.</p>
-            <div class="diversity-foods">
-              <span class="food-tag">Chole Bhature</span>
-              <span class="food-tag">Samosa</span>
-              <span class="food-tag">Golgappa</span>
-              <span class="food-tag">Kulcha</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="diversity-card">
-          <div class="diversity-icon">🌴</div>
-          <div>
-            <h3>South India</h3>
-            <p>Rice and lentil-based fermented foods, coconut-laced curries, and tamarind-forward flavours. The birthplace of dosa, idli, and some of the world's most beloved street foods.</p>
-            <div class="diversity-foods">
-              <span class="food-tag">Masala Dosa</span>
-              <span class="food-tag">Idli Sambar</span>
-              <span class="food-tag">Pesarattu</span>
-              <span class="food-tag">Kozhikode Halwa</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="diversity-card">
-          <div class="diversity-icon">🌊</div>
-          <div>
-            <h3>West India</h3>
-            <p>A brilliant marriage of tangy, sweet, and spicy. Mumbai's street food culture is world-famous, while Gujarat's vegetarian traditions and Goa's Portuguese-influenced coastal cuisine are extraordinary.</p>
-            <div class="diversity-foods">
-              <span class="food-tag">Vada Pav</span>
-              <span class="food-tag">Pav Bhaji</span>
-              <span class="food-tag">Dabeli</span>
-              <span class="food-tag">Fish Recheado</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="diversity-card">
-          <div class="diversity-icon">🌅</div>
-          <div>
-            <h3>East India</h3>
-            <p>Subtle mustard-oil flavours, fermented foods, and fresh fish define East India. Kolkata is one of the great street food cities of the world, with its own entirely unique culinary vocabulary.</p>
-            <div class="diversity-foods">
-              <span class="food-tag">Kathi Roll</span>
-              <span class="food-tag">Jhal Muri</span>
-              <span class="food-tag">Litti Chokha</span>
-              <span class="food-tag">Dahibara</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="diversity-card">
-          <div class="diversity-icon">🌿</div>
-          <div>
-            <h3>Northeast India</h3>
-            <p>Bamboo, fermentation, smoked meats, and rare endemic chillies create one of the most unique and underexplored culinary traditions on the planet. Deeply tied to forest and tribal cultures.</p>
-            <div class="diversity-foods">
-              <span class="food-tag">Momos</span>
-              <span class="food-tag">Jadoh</span>
-              <span class="food-tag">Singju</span>
-              <span class="food-tag">Smoked Pork</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="diversity-card">
-          <div class="diversity-icon">🏛️</div>
-          <div>
-            <h3>Central India</h3>
-            <p>Hearty, earthy, and rustic cuisine shaped by the Deccan plateau and tribal culinary traditions. Madhya Pradesh's street food, especially Indore's legendary food scene, is a national treasure.</p>
-            <div class="diversity-foods">
-              <span class="food-tag">Poha Jalebi</span>
-              <span class="food-tag">Dal Baati</span>
-              <span class="food-tag">Chila</span>
-              <span class="food-tag">Bhutte ka Kees</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
+  </main>
 
   <!-- ══════════ FOOTER ══════════ -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-logo">Street<span>Food</span> India</div>
-      <p class="footer-text">Made with ❤️ &amp; 🌶️ by <strong>Team Street Food India</strong> &nbsp;·&nbsp; Git Workflow Assignment</p>
+      <p class="footer-text">
+        Made with ❤️ &amp; 🌶️ by <strong>Team Street Food India</strong> &nbsp;·&nbsp; Git Workflow Assignment
+      </p>
       <ul class="footer-nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
