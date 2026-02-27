@@ -10,7 +10,7 @@ A collaborative static website created as a **Git workflow teamwork assignment**
 
 ## 🌟 Live Website
 
-🔗 **[View on GitHub Pages →]((https://santhoshiravi.github.io/street-foods-india/)**
+🔗 **[View on GitHub Pages →](https://santhoshiravi.github.io)**
 
 ---
 
