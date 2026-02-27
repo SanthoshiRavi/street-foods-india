@@ -1,10 +1,761 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Coming Soon</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Street Food of India — Taste the Streets</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Coming Soon</h1>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar">
+  <div class="logo">
+    <span class="logo-dot">◆</span>
+    Street<span>Food</span> India
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="nav-cta">Share a Dish →</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="hero-badge">🇮🇳 &nbsp; 28 States · Endless Flavours</div>
+  <h1>Taste the <em>Street Foods</em><br>of India</h1>
+  <div class="hero-sub">From Kashmir to Kanyakumari</div>
+  <p>A culinary journey through the most iconic, beloved, and utterly irresistible street food across every corner of India.</p>
+  <div class="hero-actions">
+    <a href="#foods" class="btn-primary">Explore All Dishes 🍛</a>
+    <a href="about.html" class="btn-secondary">Our Story →</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item"><div class="stat-num">36+</div><div class="stat-label">States & UTs</div></div>
+    <div class="stat-item"><div class="stat-num">50+</div><div class="stat-label">Street Foods</div></div>
+    <div class="stat-item"><div class="stat-num">5000</div><div class="stat-label">Years of Flavour</div></div>
+    <div class="stat-item"><div class="stat-num">1B+</div><div class="stat-label">Food Lovers</div></div>
+  </div>
+  <div class="scroll-hint">Scroll to explore</div>
+</section>
+
+<!-- ══════════ FOOD SECTION ══════════ -->
+<section class="section section-cream" id="foods">
+  <div class="inner">
+    <div class="section-head center">
+      <span class="section-label">The Flavours of India</span>
+      <h2 class="section-title">Street Food Across <em>Every State</em></h2>
+      <p class="section-desc">Filter by region — then <strong>click any dish</strong> to explore it up close with a full photo.</p>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCards('all', this)">🗺️ All India</button>
+      <button class="filter-btn" onclick="filterCards('north', this)">🏔️ North</button>
+      <button class="filter-btn" onclick="filterCards('south', this)">🌴 South</button>
+      <button class="filter-btn" onclick="filterCards('east', this)">🌅 East</button>
+      <button class="filter-btn" onclick="filterCards('west', this)">🌊 West</button>
+      <button class="filter-btn" onclick="filterCards('central', this)">🏛️ Central</button>
+      <button class="filter-btn" onclick="filterCards('northeast', this)">🌿 Northeast</button>
+      <button class="filter-btn" onclick="filterCards('ut', this)">🏝️ Union Territories</button>
+    </div>
+
+    <div class="food-grid" id="foodGrid">
+
+      <!-- NORTH INDIA -->
+      <div class="food-card" data-region="north"
+           data-name="Samosa" data-state="Uttar Pradesh" data-region-label="North India"
+           data-veg="veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=900&q=85"
+           data-desc="Golden, crispy pastry stuffed with spiced potatoes and green peas, deep-fried to perfection. India's most universally beloved snack — available at every chai stall from Agra to Amritsar. The perfect samosa has a shatteringly crisp shell, a filling fragrant with cumin and coriander, and is always best eaten hot with mint chutney and a glass of masala chai."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🥟</span><span class="region-tag">North India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Uttar Pradesh</div>
+          <div class="card-name">Samosa</div>
+          <p class="card-desc">Golden, crispy pastry stuffed with spiced potatoes and green peas. India's most universally beloved street snack.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="north"
+           data-name="Chole Bhature" data-state="Punjab" data-region-label="North India"
+           data-veg="veg" data-spice="3"
+           data-image="https://images.unsplash.com/photo-1626500154978-e9e76b5b4254?w=900&q=85"
+           data-desc="Fluffy, deep-fried bhature bread paired with a bold, slow-cooked chickpea curry rich with garam masala and tamarind. The quintessential Punjabi breakfast that fuels an entire nation. It's always eaten with raw onions, green chilli, and a squeeze of lime — the full Punjabi morning ritual that has been unchanged for generations."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🫓</span><span class="region-tag">North India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Punjab</div>
+          <div class="card-name">Chole Bhature</div>
+          <p class="card-desc">Fluffy deep-fried bhature bread with bold slow-cooked chickpea curry. The quintessential Punjabi breakfast that fuels a nation.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="north"
+           data-name="Aloo Tikki Chaat" data-state="Lucknow, UP" data-region-label="North India"
+           data-veg="veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=900&q=85"
+           data-desc="Crispy pan-fried potato patties layered with sweet tamarind chutney, spicy green chutney, yoghurt, and chaat masala. Every bite is a symphony of sweet, sour, and spice. Lucknow's aloo tikki is particularly legendary — cooked in ghee on a flat tawa until the outside is perfectly golden and crackling while the inside remains soft."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🧆</span><span class="region-tag">North India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Lucknow, UP</div>
+          <div class="card-name">Aloo Tikki Chaat</div>
+          <p class="card-desc">Crispy potato patties layered with tamarind chutney, yoghurt, and chaat masala. A perfect symphony of sweet, sour, and spice.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="north"
+           data-name="Golgappa / Pani Puri" data-state="Delhi" data-region-label="North India"
+           data-veg="veg" data-spice="3"
+           data-image="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=900&q=85"
+           data-desc="Hollow crispy puri shells filled with spiced mashed potato and chickpeas, dunked into ice-cold tangy tamarind-mint water. Delhi's undisputed street king. The joy of pani puri is in the ritual — six puris, six explosions of flavour, eaten standing at a roadside stall, unable to stop until the plate is empty."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🍢</span><span class="region-tag">North India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Delhi</div>
+          <div class="card-name">Golgappa / Pani Puri</div>
+          <p class="card-desc">Hollow crispy puris filled with potato and chickpeas, dunked in icy tangy mint-tamarind water. Delhi's undisputed street king.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="north"
+           data-name="Rogan Josh Kulcha" data-state="Jammu & Kashmir" data-region-label="North India"
+           data-veg="non-veg" data-spice="3"
+           data-image="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=900&q=85"
+           data-desc="Tender slow-braised lamb in a fragrant Kashmiri chilli-and-spice gravy, served scooped into fluffy kulcha bread from a tandoor. The deep red colour comes from Kashmiri chillies — bright and fragrant rather than scorchingly hot, making this dish beautifully complex rather than simply spicy."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🫔</span><span class="region-tag">North India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Jammu & Kashmir</div>
+          <div class="card-name">Rogan Josh Kulcha</div>
+          <p class="card-desc">Tender slow-braised lamb in fragrant Kashmiri chilli gravy, served in fluffy tandoor-baked kulcha bread. Kashmir's mountain cuisine in street form.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span></div>
+            <span class="veg-badge non-veg">Non-Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="north"
+           data-name="Amritsari Kulcha" data-state="Amritsar, Punjab" data-region-label="North India"
+           data-veg="veg" data-spice="1"
+           data-image="https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=900&q=85"
+           data-desc="Buttery, stuffed flatbread baked in a tandoor until golden and flaky, loaded with spiced paneer or potato, served with chole and sweet onion rings. The best kulchas are made at shops running for generations — the tandoor seasoned by decades of bread and a family recipe passed down with quiet pride."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🍗</span><span class="region-tag">North India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Amritsar, Punjab</div>
+          <div class="card-name">Amritsari Kulcha</div>
+          <p class="card-desc">Buttery stuffed flatbread baked golden in a tandoor, loaded with paneer or potato, served with chole. Amritsar's most celebrated street dish.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="north"
+           data-name="Bal Mithai" data-state="Uttarakhand" data-region-label="North India"
+           data-veg="veg" data-spice="0"
+           data-image="https://images.unsplash.com/photo-1666467375672-a24c83d3ab4f?w=900&q=85"
+           data-desc="A fudge-like brown sweet made from roasted khoya, coated with white sugar balls. A Kumaoni specialty from the hills of Uttarakhand — made for generations in the mountain towns of Almora and Ranikhet. Dense, caramel-rich, and uniquely unlike any other Indian sweet. Best enjoyed with Kumaoni tea in cold mountain air."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🥘</span><span class="region-tag">North India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Uttarakhand</div>
+          <div class="card-name">Bal Mithai</div>
+          <p class="card-desc">Fudge-like brown sweet from roasted khoya, coated in white sugar balls. Uttarakhand's most cherished Kumaoni mountain confection.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili">🌶</span><span class="chili">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="north"
+           data-name="Siddu" data-state="Himachal Pradesh" data-region-label="North India"
+           data-veg="veg" data-spice="1"
+           data-image="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=900&q=85"
+           data-desc="Steamed wheat bread stuffed with a spiced mix of poppy seeds, walnuts, and paneer, served with ghee and dal. A Himachali mountain staple — dense, filling, and warming on cold winter days in the Kullu and Manali valleys. Traditionally made during festivals and family celebrations, the dough ferments naturally overnight."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🥙</span><span class="region-tag">North India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Himachal Pradesh</div>
+          <div class="card-name">Siddu</div>
+          <p class="card-desc">Steamed wheat bread stuffed with poppy seeds, walnuts, and paneer, served with ghee. A dense, warming Himachali mountain staple.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <!-- WEST INDIA -->
+      <div class="food-card" data-region="west"
+           data-name="Vada Pav" data-state="Mumbai, Maharashtra" data-region-label="West India"
+           data-veg="veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=900&q=85"
+           data-desc="India's greatest street burger — a spiced, battered potato fritter nestled inside a soft white bun with dry garlic chutney and fried chillies. The soul of Mumbai. First created at Dadar station in the 1960s as a cheap, filling meal for mill workers — it never left, and never will. Every Mumbaikar has their favourite stall."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🍔</span><span class="region-tag">West India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Mumbai, Maharashtra</div>
+          <div class="card-name">Vada Pav</div>
+          <p class="card-desc">India's greatest street burger — spiced potato fritter in a soft bun with dry garlic chutney. The undisputed soul of Mumbai.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="west"
+           data-name="Pani Puri" data-state="Mumbai, Maharashtra" data-region-label="West India"
+           data-veg="veg" data-spice="3"
+           data-image="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=900&q=85"
+           data-desc="Crispy hollow puri shells dunked in ice-cold spiced mint-and-tamarind water, filled with mashed potato and moong. Mumbai's pani puri has its own distinct tangy-sweet water that sets it apart from all others. The taste is simultaneously refreshing, tangy, spicy, and deeply satisfying — six at a time, always."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🫙</span><span class="region-tag">West India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Mumbai, Maharashtra</div>
+          <div class="card-name">Pani Puri</div>
+          <p class="card-desc">Crispy hollow puris dunked in icy spiced mint-tamarind water. Mumbai's version has a uniquely tangy-sweet water unlike anywhere else.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="west"
+           data-name="Pav Bhaji" data-state="Mumbai, Maharashtra" data-region-label="West India"
+           data-veg="veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=900&q=85"
+           data-desc="A rich, buttery mash of mixed vegetables and tomatoes cooked with pav bhaji masala on a flat iron tawa, served with toasted, butter-soaked bread rolls. Born in Mumbai's textile mill worker canteens in the 1850s to feed workers quickly and cheaply. The tawa is always swimming in butter — that is completely non-negotiable."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🥘</span><span class="region-tag">West India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Mumbai, Maharashtra</div>
+          <div class="card-name">Pav Bhaji</div>
+          <p class="card-desc">Rich buttery mash of mixed vegetables cooked on a tawa, served with toasted butter rolls. Born in Mumbai's 1850s mill worker canteens.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="west"
+           data-name="Dabeli" data-state="Ahmedabad, Gujarat" data-region-label="West India"
+           data-veg="veg" data-spice="1"
+           data-image="https://images.unsplash.com/photo-1604467794349-0b74285de7e7?w=900&q=85"
+           data-desc="A Kutchi specialty — spiced potato filling in a toasted bun with pomegranate seeds, roasted peanuts, and sweet-spicy chutneys. A complex balance of flavours that makes it uniquely Gujarati. The name 'dabeli' means 'pressed' in Kutchi — referring to how the bun is pressed flat on a hot iron griddle until golden and crisp."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🌮</span><span class="region-tag">West India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Ahmedabad, Gujarat</div>
+          <div class="card-name">Dabeli</div>
+          <p class="card-desc">Kutchi spiced potato in a toasted bun with pomegranate seeds, peanuts, and sweet-spicy chutneys. A complex, uniquely Gujarati street food.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="west"
+           data-name="Goan Fish Recheado" data-state="Goa" data-region-label="West India"
+           data-veg="non-veg" data-spice="3"
+           data-image="https://images.unsplash.com/photo-1559847844-5315695dadae?w=900&q=85"
+           data-desc="Fresh local fish stuffed with a fiery recheado masala paste of Kashmiri chillies, vinegar, and spices, then pan-fried golden. Sold at beach shacks and harbours every morning. The Portuguese influence is unmistakable in the vinegar-based marinade — a living relic of Goa's 450-year colonial history on every plate."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🧇</span><span class="region-tag">West India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Goa</div>
+          <div class="card-name">Goan Fish Recheado</div>
+          <p class="card-desc">Fresh fish stuffed with fiery recheado chilli-vinegar paste and pan-fried golden. Sold at Goa's beach shacks every morning.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span></div>
+            <span class="veg-badge non-veg">Non-Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="west"
+           data-name="Dal Baati Churma" data-state="Rajasthan" data-region-label="West India"
+           data-veg="veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=900&q=85"
+           data-desc="Hard wheat balls baked over a wood fire until golden, cracked open and drenched in ghee, served with robust dal and sweet crumbled churma. Originally made by Rajput soldiers on long desert campaigns who buried dough in the sand under embers — a warrior's meal that became a royal celebration dish."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🫓</span><span class="region-tag">West India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Rajasthan</div>
+          <div class="card-name">Dal Baati Churma</div>
+          <p class="card-desc">Fire-baked wheat balls drenched in ghee, served with robust dal and sweet churma. A desert warrior's meal turned royal Rajasthani feast.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <!-- SOUTH INDIA -->
+      <div class="food-card" data-region="south"
+           data-name="Masala Dosa" data-state="Chennai, Tamil Nadu" data-region-label="South India"
+           data-veg="veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=900&q=85"
+           data-desc="A paper-thin, golden-crispy crepe made from fermented rice and urad dal batter, filled with spiced potato and onion masala, served alongside coconut chutney and steaming sambar. South India's most iconic export to the world. The overnight fermentation gives it a subtle sourness that makes it completely addictive."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🥞</span><span class="region-tag">South India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Chennai, Tamil Nadu</div>
+          <div class="card-name">Masala Dosa</div>
+          <p class="card-desc">Paper-thin crispy fermented rice crepe filled with spiced potato masala, served with coconut chutney and sambar. South India's global ambassador.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="south"
+           data-name="Hyderabadi Biryani" data-state="Hyderabad, Telangana" data-region-label="South India"
+           data-veg="non-veg" data-spice="3"
+           data-image="https://images.unsplash.com/photo-1563379091339-03246963d651?w=900&q=85"
+           data-desc="Fragrant basmati rice slow-cooked (dum) with marinated mutton, saffron, fried onions, and whole spices in a sealed pot — a UNESCO-worthy dish sold from handis on Hyderabad street corners since the Nizam era. The sealed pot traps steam and allows the flavours to intensify over hours of slow, patient cooking."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🫔</span><span class="region-tag">South India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Hyderabad, Telangana</div>
+          <div class="card-name">Hyderabadi Biryani</div>
+          <p class="card-desc">Fragrant basmati slow-cooked dum style with marinated mutton, saffron, and whole spices. A Nizam-era masterpiece sold on street corners.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span></div>
+            <span class="veg-badge non-veg">Non-Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="south"
+           data-name="Kozhikode Halwa" data-state="Kerala" data-region-label="South India"
+           data-veg="veg" data-spice="0"
+           data-image="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=900&q=85"
+           data-desc="A dense, jewel-like sweet made from rice flour, coconut oil, and jaggery, scented with cardamom and garnished with cashews. Kozhikode's most beloved confection sold in every halwa shop along the Malabar coast. The halwa comes in dozens of flavours — including black halwa with coconut milk that is a legendary local specialty."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🫙</span><span class="region-tag">South India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Kerala</div>
+          <div class="card-name">Kozhikode Halwa</div>
+          <p class="card-desc">Dense jewel-like sweet from rice flour, coconut oil, and jaggery. Sold in every halwa shop along Kerala's Malabar coast.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili">🌶</span><span class="chili">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="south"
+           data-name="Pesarattu" data-state="Andhra Pradesh" data-region-label="South India"
+           data-veg="veg" data-spice="3"
+           data-image="https://images.unsplash.com/photo-1630383249896-424e482df921?w=900&q=85"
+           data-desc="A thin, crispy green moong dal crepe flavoured with ginger, chillies, and cumin, served with upma stuffing and ginger chutney. Andhra's beloved breakfast street dish — nutritious and fiery. Unlike dosa, pesarattu is made from whole green gram, giving it a distinctive earthy, nutty flavour and a striking natural green colour."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🍲</span><span class="region-tag">South India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Andhra Pradesh</div>
+          <div class="card-name">Pesarattu</div>
+          <p class="card-desc">Crispy green moong dal crepe with ginger and chillies, served with upma and ginger chutney. Andhra's fiery, nutritious breakfast staple.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <!-- EAST INDIA -->
+      <div class="food-card" data-region="east"
+           data-name="Kathi Roll" data-state="Kolkata, West Bengal" data-region-label="East India"
+           data-veg="non-veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=900&q=85"
+           data-desc="A flaky paratha wrap stuffed with egg, spiced chicken or paneer, fresh onions, green chutney, and lime. Born at Nizam's restaurant in Kolkata in 1932 — the original Indian street wrap. The egg-coated paratha is what makes a true Kolkata kathi roll: the egg fries onto the bread as it cooks, creating a golden seal around everything."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🍢</span><span class="region-tag">East India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Kolkata, West Bengal</div>
+          <div class="card-name">Kathi Roll</div>
+          <p class="card-desc">Flaky paratha wrap with egg, spiced chicken or paneer, onions and chutney. Born at Nizam's Kolkata in 1932 — India's original street wrap.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge non-veg">Non-Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="east"
+           data-name="Jhal Muri" data-state="Kolkata, West Bengal" data-region-label="East India"
+           data-veg="veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=900&q=85"
+           data-desc="Puffed rice tossed with mustard oil, raw onions, green chillies, chaat masala, coconut slivers, and lime — mixed by the vendor's bare hands in a rhythmic motion. Kolkata's quintessential evening snack. The genius of jhal muri is its simplicity — each vendor has their own secret ratio, their own signature, their own loyal following."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🫙</span><span class="region-tag">East India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Kolkata, West Bengal</div>
+          <div class="card-name">Jhal Muri</div>
+          <p class="card-desc">Puffed rice tossed with mustard oil, onions, green chillies, coconut, and lime — mixed by hand. Kolkata's quintessential evening snack.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="east"
+           data-name="Dahibara Aloo Dum" data-state="Odisha" data-region-label="East India"
+           data-veg="veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=900&q=85"
+           data-desc="Soft lentil dumplings soaked in yoghurt, topped with spicy potato curry, tamarind chutney, and crunchy sev. Odisha's most famous chaat — served at nearly every street corner in Bhubaneswar and Cuttack. It's the beloved breakfast and evening snack of Odisha — unique in its combination of textures found nowhere else in Indian street food."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🫓</span><span class="region-tag">East India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Odisha</div>
+          <div class="card-name">Dahibara Aloo Dum</div>
+          <p class="card-desc">Soft lentil dumplings soaked in yoghurt, topped with spicy potato curry and tamarind chutney. Odisha's most beloved street chaat.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="east"
+           data-name="Litti Chokha" data-state="Bihar / Jharkhand" data-region-label="East India"
+           data-veg="veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=900&q=85"
+           data-desc="Wheat flour balls stuffed with roasted sattu and spices, cooked over a wood fire until charred, served with smoky mashed brinjal-tomato chokha. Bihar's proudest street food and national identity dish. The char marks are not just aesthetics — they add a deep, irreplaceable smokiness that no oven or gas flame can replicate."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🍛</span><span class="region-tag">East India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Bihar / Jharkhand</div>
+          <div class="card-name">Litti Chokha</div>
+          <p class="card-desc">Charred wheat balls stuffed with roasted sattu, served with smoky brinjal-tomato chokha. Bihar's proudest national identity dish.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <!-- NORTHEAST INDIA -->
+      <div class="food-card" data-region="northeast"
+           data-name="Momos" data-state="Sikkim / Darjeeling" data-region-label="Northeast India"
+           data-veg="non-veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=900&q=85"
+           data-desc="Steamed or fried dumplings filled with spiced minced pork, chicken, or vegetables, served with a blazing red chilli-sesame dipping sauce. The Northeast's greatest gift to all of India — now found on every city street. Momos travelled from Tibet and Nepal into Sikkim and Darjeeling, becoming the defining street food of the Northeast hills."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🥟</span><span class="region-tag">Northeast</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Sikkim / Darjeeling</div>
+          <div class="card-name">Momos</div>
+          <p class="card-desc">Steamed or fried dumplings filled with spiced meat or vegetables, served with blazing red chilli sauce. The Northeast's gift to all of India.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge non-veg">Non-Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="northeast"
+           data-name="Smoked Pork & Bamboo Shoot" data-state="Nagaland" data-region-label="Northeast India"
+           data-veg="non-veg" data-spice="3"
+           data-image="https://images.unsplash.com/photo-1547592180-85f173990554?w=900&q=85"
+           data-desc="Strips of locally-smoked pork belly braised with fermented bamboo shoots and Naga ghost chillies (bhut jolokia) — one of the world's hottest peppers. Nagaland's bravest street food. The pork is smoked over wood fires for days before cooking, developing a flavour intensity unlike anything else in Indian cuisine."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🍲</span><span class="region-tag">Northeast</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Nagaland</div>
+          <div class="card-name">Smoked Pork & Bamboo Shoot</div>
+          <p class="card-desc">Days-smoked pork belly braised with fermented bamboo and Naga ghost chillies. Nagaland's most intensely flavoured, fire-hearted street food.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span></div>
+            <span class="veg-badge non-veg">Non-Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="northeast"
+           data-name="Jadoh" data-state="Meghalaya" data-region-label="Northeast India"
+           data-veg="non-veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=900&q=85"
+           data-desc="A Khasi one-pot rice dish cooked with pork, black sesame, and ginger until deeply fragrant. Served from large pots at Shillong's Iewduh market. Jadoh is a communal dish — eaten at celebrations, funerals, and festivals alike, always bringing people together around a shared meal with deep cultural significance."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🍵</span><span class="region-tag">Northeast</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Meghalaya</div>
+          <div class="card-name">Jadoh</div>
+          <p class="card-desc">Khasi one-pot rice with pork, black sesame, and ginger. Served from large pots at Shillong's famous Iewduh market — deeply communal and cultural.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge non-veg">Non-Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="northeast"
+           data-name="Singju" data-state="Manipur" data-region-label="Northeast India"
+           data-veg="non-veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=900&q=85"
+           data-desc="A fresh Manipuri salad of finely shredded raw lotus stem, banana flowers, cabbage, and fermented fish, tossed with toasted sesame and chilli. Manipur's unique, explosively flavoured street salad. Every component is raw and fresh, making singju one of the most nutritionally rich street foods in all of India."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🫔</span><span class="region-tag">Northeast</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Manipur</div>
+          <div class="card-name">Singju</div>
+          <p class="card-desc">Fresh salad of shredded lotus stem, banana flowers, and fermented fish with toasted sesame. Manipur's unique, explosively flavoured street salad.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge non-veg">Non-Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <!-- CENTRAL INDIA -->
+      <div class="food-card" data-region="central"
+           data-name="Poha Jalebi" data-state="Indore, Madhya Pradesh" data-region-label="Central India"
+           data-veg="veg" data-spice="1"
+           data-image="https://images.unsplash.com/photo-1589301761154-a4f8e0ee6c3e?w=900&q=85"
+           data-desc="Flattened rice cooked with mustard seeds, turmeric, onion, and pomegranate, served alongside crispy hot jalebis dripping with sugar syrup. Indore's iconic morning street combination, eaten by millions every day. The contrast of savoury poha and sweet sticky jalebi eaten together is one of India's most underrated and surprisingly perfect flavour pairings."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🍽️</span><span class="region-tag">Central India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Indore, Madhya Pradesh</div>
+          <div class="card-name">Poha Jalebi</div>
+          <p class="card-desc">Savoury flattened rice with mustard and pomegranate, paired with crispy sweet jalebis. Indore's iconic morning street combination.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="central"
+           data-name="Chila" data-state="Chhattisgarh" data-region-label="Central India"
+           data-veg="veg" data-spice="1"
+           data-image="https://images.unsplash.com/photo-1630383249896-424e482df921?w=900&q=85"
+           data-desc="A thin, golden rice-flour crepe cooked on an iron griddle, stuffed with spiced chana dal and served with tangy tomato chutney. Chhattisgarh's everyday street breakfast — simple, nourishing, and deeply satisfying. Chila is proof that the simplest food, made with care and the finest local ingredients, is often the most satisfying of all."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🫕</span><span class="region-tag">Central India</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Chhattisgarh</div>
+          <div class="card-name">Chila</div>
+          <p class="card-desc">Golden rice-flour crepe stuffed with spiced chana dal, served with tangy tomato chutney. Chhattisgarh's simple, nourishing everyday breakfast.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <!-- UNION TERRITORIES -->
+      <div class="food-card" data-region="ut"
+           data-name="Pondicherry Creole Curry" data-state="Puducherry" data-region-label="Union Territory"
+           data-veg="non-veg" data-spice="1"
+           data-image="https://images.unsplash.com/photo-1574484284002-952d92456975?w=900&q=85"
+           data-desc="A unique Franco-Tamil fusion — a mildly spiced coconut-milk curry served with French baguettes. A living relic of Puducherry's French colonial past, sold at street cafés along Rue de la Marine. The baguette-and-curry combination sounds unlikely but is deeply harmonious — a reminder of how colonial history left lasting culinary fingerprints."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🍱</span><span class="region-tag">Union Territory</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Puducherry</div>
+          <div class="card-name">Pondicherry Creole Curry</div>
+          <p class="card-desc">A Franco-Tamil fusion — coconut-milk curry served with French baguettes. A living relic of Puducherry's French colonial past.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge non-veg">Non-Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+      <div class="food-card" data-region="ut"
+           data-name="Sector 17 Chaat" data-state="Chandigarh" data-region-label="Union Territory"
+           data-veg="veg" data-spice="2"
+           data-image="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=900&q=85"
+           data-desc="The famous chaat corner of Chandigarh's Sector 17 plaza serves papdi chaat, tikki, and gol gappe of legendary quality. A city designed by Le Corbusier that also developed a chaat culture entirely its own. The wide boulevards and planned open plazas create a perfect setting for the city's vibrant evening street food culture."
+           onclick="openModal(this)">
+        <div class="card-top"><span class="food-emoji">🫔</span><span class="region-tag">Union Territory</span></div>
+        <div class="card-body">
+          <div class="card-state">📍 Chandigarh</div>
+          <div class="card-name">Sector 17 Chaat</div>
+          <p class="card-desc">Legendary papdi chaat, tikki, and gol gappe at Chandigarh's iconic Sector 17 plaza. A Le Corbusier city with a chaat culture all its own.</p>
+          <div class="card-footer">
+            <div class="spice-level"><span>Spice</span><span class="chili hot">🌶</span><span class="chili hot">🌶</span><span class="chili">🌶</span></div>
+            <span class="veg-badge veg">Veg</span>
+          </div>
+        </div>
+        <div class="card-click-hint">Click to explore →</div>
+      </div>
+
+    </div><!-- /food-grid -->
+  </div>
+</section>
+
+<!-- ══════════ DID YOU KNOW ══════════ -->
+<section class="section section-dark">
+  <div class="inner">
+    <div class="section-head center">
+      <span class="section-label">Food For Thought</span>
+      <h2 class="section-title"><em>Did You Know?</em></h2>
+      <p class="section-desc">Fascinating facts about India's extraordinary street food culture</p>
+      <div class="divider-line"></div>
+    </div>
+    <div class="facts-grid">
+      <div class="fact-card"><span class="fact-icon">🌍</span><h3>World's Largest Street Food Culture</h3><p>India has over 7,500 distinct street food dishes across its 28 states and 8 union territories — more variety than any other country on Earth.</p></div>
+      <div class="fact-card"><span class="fact-icon">💰</span><h3>A ₹50,000 Crore Industry</h3><p>India's street food economy is worth over ₹50,000 crore (approx. $6 billion USD) and supports the livelihoods of over 10 million street vendors nationwide.</p></div>
+      <div class="fact-card"><span class="fact-icon">🌶️</span><h3>The Spice Capital of the World</h3><p>India produces over 75% of the world's spices and consumes more spices per capita than any other nation — the foundation of every street food flavour.</p></div>
+      <div class="fact-card"><span class="fact-icon">🏆</span><h3>Globally Celebrated Flavours</h3><p>Pani Puri, Masala Dosa, and Biryani have all featured on CNN Travel and TasteAtlas lists of the world's greatest foods — representing India globally.</p></div>
+      <div class="fact-card"><span class="fact-icon">🔥</span><h3>World's Hottest Chilli</h3><p>Nagaland's Bhut Jolokia (Ghost Pepper) held the Guinness World Record as the world's hottest chilli — and it's a beloved everyday cooking ingredient in Northeast India.</p></div>
+      <div class="fact-card"><span class="fact-icon">🌱</span><h3>Mostly Vegetarian</h3><p>Over 60% of India's street foods are completely vegetarian — making it one of the most inclusive street food cultures for non-meat-eaters globally.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Street<span>Food</span> India</div>
+    <p class="footer-text">Made with ❤️ &amp; 🌶️ by <strong>Team Street Food India</strong> &nbsp;·&nbsp; Git Workflow Assignment</p>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- ══════════ MODAL ══════════ -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="modal-image-wrap">
+      <img id="modalImage" src="" alt="" loading="lazy" />
+      <div class="modal-image-overlay"></div>
+      <div class="modal-image-meta">
+        <span class="modal-region-tag" id="modalRegionTag"></span>
+        <div class="modal-spice" id="modalSpice"></div>
+      </div>
+    </div>
+    <div class="modal-content">
+      <div class="modal-state" id="modalState"></div>
+      <h2 class="modal-name" id="modalName"></h2>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-footer-row">
+        <span class="modal-veg-badge" id="modalVeg"></span>
+        <a href="contact.html" class="modal-share-btn">Know a variation? Share it →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ SCRIPTS ══════════ -->
+<script>
+  function filterCards(region, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.food-card').forEach(card => {
+      if (region === 'all' || card.dataset.region === region) {
+        card.style.display = 'flex';
+        card.style.animation = 'fadeIn 0.4s ease both';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function openModal(card) {
+    const spiceCount = parseInt(card.dataset.spice) || 0;
+    const isVeg = card.dataset.veg === 'veg';
+
+    document.getElementById('modalImage').src = card.dataset.image;
+    document.getElementById('modalImage').alt = card.dataset.name;
+    document.getElementById('modalRegionTag').textContent = card.dataset.regionLabel;
+    document.getElementById('modalState').textContent = '📍 ' + card.dataset.state;
+    document.getElementById('modalName').textContent = card.dataset.name;
+    document.getElementById('modalDesc').textContent = card.dataset.desc;
+
+    let spiceHTML = '<span class="spice-label">SPICE</span>';
+    for (let i = 1; i <= 3; i++) {
+      spiceHTML += `<span class="spice-chili${i <= spiceCount ? ' lit' : ''}">🌶</span>`;
+    }
+    document.getElementById('modalSpice').innerHTML = spiceHTML;
+
+    const vegEl = document.getElementById('modalVeg');
+    vegEl.textContent = isVeg ? '🟢 Vegetarian' : '🔴 Non-Vegetarian';
+    vegEl.className = 'modal-veg-badge ' + (isVeg ? 'veg' : 'non-veg');
+
+    document.getElementById('modalOverlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(event) {
+    if (event && event.type === 'click') {
+      const isOverlay = event.target === document.getElementById('modalOverlay');
+      const isCloseBtn = event.target.classList.contains('modal-close');
+      if (!isOverlay && !isCloseBtn) return;
+    }
+    document.getElementById('modalOverlay').classList.remove('active');
+    document.body.style.overflow = '';
+    setTimeout(() => { document.getElementById('modalImage').src = ''; }, 350);
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+  });
+</script>
+
 </body>
 </html>
