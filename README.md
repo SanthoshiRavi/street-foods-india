@@ -39,20 +39,6 @@ This website captures the essence of India’s street food culture through:
 
 ---
 
-## 👥 Team & Responsibilities
-
-> **“Great websites are built by great collaboration.”**
-
-| Member   | File           | Branch                 | Responsibility                                      |
-| -------- | -------------- | ---------------------- | --------------------------------------------------- |
-| Member 1 | `index.html`   | `feature/home-page`    | Hero section, food grid with filters, facts section |
-| Member 2 | `about.html`   | `feature/about-page`   | Story, team section, regional cards                 |
-| Member 3 | `contact.html` | `feature/contact-page` | Contact form, dropdown, suggestion feature          |
-| Member 4 | `style.css`    | `feature/stylesheet`   | Complete visual design system                       |
-| Member 5 | `README.md`    | `feature/readme`       | Documentation and Git workflow setup                |
-
----
-
 ## 🌿 Git Workflow Strategy (Git Flow Model)
 
 ```
